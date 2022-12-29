@@ -8,13 +8,22 @@
     </head>
     <body>
         <h1>tomo</h1>
+        <button onClick="speakSwitch();">speak</button>
     </body>
     <script>
-	console.log("helloworld")
-        speechSynthesis.speak(
-            new SpeechSynthesisUtterance("おはようございます！")
-        );
-	console.log("helloworld")
+        if ("speechSynthesis" in window) {
+            alert("このブラウザは音声合成に対応しています。🎉");
+        } else {
+            alert("このブラウザは音声合成に対応していません。😭");
+        }
 
+        function speakSwitch() {
+            const speakMsg = new SpeechSynthesisUtterance(
+                "年末の掃除をした方がいいと思うぞ"
+            );
+            speakMsg.lang = "ja-JP";
+            speakMsg.rate = 1.0;
+            window.speechSynthesis.speak(speakMsg);
+        }
     </script>
 </html>
