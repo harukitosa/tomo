@@ -9,9 +9,16 @@
     <body>
         <h1>tomo</h1>
         <div>友達作成アプリ</div>
-        <button onClick="speakSwitch();">
+        <button onClick="speakSwitch('年末の掃除をした方がいいと思うぞ');">
             年末の掃除をした方がいいと思うぞ
         </button>
+        <button onClick="speakSwitch('早く起きた方がいいと思うぞ');">
+            早く起きた方がいいと思うぞ
+        </button>
+        <button onClick="speakSwitch('もういくつ寝るとお正月だぞ');">
+            もういくつ寝るとお正月だぞ
+        </button>
+        <button onClick="speakSwitch('酒を飲んで叫ぶ');">酒を飲んで叫ぶ</button>
     </body>
     <script>
         if ("speechSynthesis" in window) {
@@ -20,10 +27,8 @@
             alert("このブラウザは音声合成に対応していません。😭");
         }
 
-        function speakSwitch() {
-            const speakMsg = new SpeechSynthesisUtterance(
-                "年末の掃除をした方がいいと思うぞ"
-            );
+        function speakSwitch(msg) {
+            const speakMsg = new SpeechSynthesisUtterance(msg);
             speakMsg.lang = "ja-JP";
             speakMsg.rate = 1.0;
             window.speechSynthesis.speak(speakMsg);
