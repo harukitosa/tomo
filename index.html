@@ -5,40 +5,78 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>tomo</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-	<div class="p-4">
-		<h1 class="text-3xl font-bold underline">tomo 友達作成アプリ</h1>
-		<div>
-			概要: 友達をいっぱい作った方がいいと言われたので友達を作ることにしました！
-			いまはボタン押すと喋るだけの友達ですが、chat系のAIと繋いで音声で会話できるようにしたいです。
-		</div>
-	</div>
+        <div class="p-4">
+            <h1 class="text-3xl font-bold underline">tomo 友達作成アプリ</h1>
+            <div>
+                概要:
+                友達をいっぱい作った方がいいと言われたので友達を作ることにしました！
+                いまはボタン押すと喋るだけの友達ですが、chat系のAIと繋いで音声で会話できるようにしたいです。
+            </div>
+        </div>
 
-
-	<div class="p-4 mb-4">
-	<h2 class="text-lg font-bold">ボタンを押すとしゃべるよ</h2>
-        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('年末の掃除をした方がいいと思うぞ');">
-            年末の掃除をした方がいいと思うぞ
-        </button>
-        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('早く起きた方がいいと思うぞ');">
-            早く起きた方がいいと思うぞ
-        </button>
-        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('もういくつ寝るとお正月だぞ');">
-            もういくつ寝るとお正月だぞ
-        </button>
-        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('酒を飲んで叫ぶ');">酒を飲んで叫ぶ</button>
-	</div>
-	<div class="p-4 mb-4">
-		<h2 class="text-lg font-bold">適当な相槌編</h2>
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('うんうん');">うんうん</button>
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('さすが');">さすが</button>
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('わかるわ〜');">わかるわ〜</button>
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('天才');">天才</button>
-		<button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick="speakSwitch('だよね');">だよね</button>
-	</div>
-
+        <div class="p-4 mb-4">
+            <h2 class="text-lg font-bold">ボタンを押すとしゃべるよ</h2>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('年末の掃除をした方がいいと思うぞ');"
+            >
+                年末の掃除をした方がいいと思うぞ
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('早く起きた方がいいと思うぞ');"
+            >
+                早く起きた方がいいと思うぞ
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('もういくつ寝るとお正月だぞ');"
+            >
+                もういくつ寝るとお正月だぞ
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('酒を飲んで叫ぶ');"
+            >
+                酒を飲んで叫ぶ
+            </button>
+        </div>
+        <div class="p-4 mb-4">
+            <h2 class="text-lg font-bold">適当な相槌編</h2>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('うんうん');"
+            >
+                うんうん
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('さすが');"
+            >
+                さすが
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('わかるわ〜');"
+            >
+                わかるわ〜
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('天才');"
+            >
+                天才
+            </button>
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onClick="speakSwitch('だよね');"
+            >
+                だよね
+            </button>
+        </div>
     </body>
     <script>
         if ("speechSynthesis" in window) {
@@ -53,5 +91,14 @@
             speakMsg.rate = 1.0;
             window.speechSynthesis.speak(speakMsg);
         }
+	
+        SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
+        const recognition = new SpeechRecognition();
+
+        recognition.onresult = (event) => {
+            alert(event.results[0][0].transcript);
+        };
+
+        recognition.start();
     </script>
 </html>
